@@ -24,14 +24,14 @@ void runapp() {
 	
 	
 	for(Trainee t :tmap.values()) {
-		Trainee ittrainee= (Trainee) t;
-		boolean isCs=ittrainee instanceof CsTrainee;
+		//Trainee ittrainee= (Trainee) t;
+		boolean isCs=t instanceof CsTrainee;
 		if(isCs) {
-			set1.add((CsTrainee) ittrainee);
+			set1.add((CsTrainee) t);
 			
 		}
 		else {
-			set2.add((EcTrainee) ittrainee);
+			set2.add((EcTrainee)t);
 		}
 		
 	}
@@ -41,7 +41,7 @@ void runapp() {
 		int id=cst.getId();
 		int languages=cst.getLanguages();
 		String name=cst.getName();
-		System.out.println("name"+id+ "  " +"lang"+ languages+"  ");
+		System.out.println("name"+name+ "  " +"lang"+ languages+"  " +"id" +id);
 		
 	}
 	
