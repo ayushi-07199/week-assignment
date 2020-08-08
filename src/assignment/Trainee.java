@@ -35,6 +35,19 @@ public class Trainee {
 	public int hashCode() {
 		return id;
 	}
-	
+	 @Override
+		public boolean equals(Object arg) {
+			if(this==arg) {
+				return true;
+			}
+			
+		   if(arg==null || !(arg instanceof Trainee) ) {
+				return false;
+		   }
+			
+		    Trainee that=(Trainee)arg;	
+			boolean isequal=this.id==that.id;
+			return isequal;
+		}
 	
 }
