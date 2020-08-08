@@ -11,9 +11,9 @@ Set<EcTrainee> set2 = new HashSet<>();
 
 void runapp() {
 	CsTrainee trainee1= new CsTrainee(1,"Anuj",2);
-	CsTrainee trainee2= new CsTrainee(3,"Ankit",1);
+	CsTrainee trainee2= new CsTrainee(2,"Ankit",1);
 	EcTrainee trainee3= new EcTrainee(3,"Ankit","ameter");
-	EcTrainee trainee4= new EcTrainee(3,"Ankit","meter");
+	EcTrainee trainee4= new EcTrainee(4,"Ankit","meter");
 	
 	
 	tmap.put(trainee1.getId(),trainee1);
