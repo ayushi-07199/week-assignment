@@ -21,6 +21,8 @@ void runapp() {
 	tmap.put(trainee3.getId(),trainee3);
 	tmap.put(trainee4.getId(),trainee4);
 	
+	
+	
 	for(Trainee t :tmap.values()) {
 		Trainee ittrainee= (Trainee) t;
 		boolean isCs=ittrainee instanceof CsTrainee;
@@ -52,6 +54,9 @@ void runapp() {
 	}
 }
 
-
+public static void main(String[] args) {
+	TraineeMain train = new TraineeMain();
+	train.runapp();
+}
 
 }
